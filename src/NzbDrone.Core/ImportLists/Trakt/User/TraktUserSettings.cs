@@ -49,8 +49,8 @@ namespace NzbDrone.Core.ImportLists.Trakt.User
         [FieldDefinition(4, Label = "Username", HelpText = "ImportListsTraktSettingsUserListUsernameHelpText")]
         public string Username { get; set; }
 
-        [FieldDefinition(8, Label = "ImportListsTraktSettingsAdditionalParameters", HelpText = "ImportListsTraktSettingsAdditionalParametersHelpText", Advanced = true)]
-        public string TraktAdditionalParameters { get; set; }
+        [FieldDefinition(5, Label = "ImportListsTraktSettingsYears", HelpText = "ImportListsTraktSettingsYearsSeriesHelpText")]
+        public string Years { get; set; }
 
         public override NzbDroneValidationResult Validate()
         {
