@@ -7,16 +7,6 @@ namespace NzbDrone.Core.ImportLists.Trakt
 {
     public static class TraktQueryHelper
     {
-        private static readonly HashSet<string> CommaSeparatedParams = new(StringComparer.OrdinalIgnoreCase)
-        {
-            "genres",
-            "certifications",
-            "networks",
-            "languages",
-            "countries",
-            "status"
-        };
-
         public static Dictionary<string, string> BuildFilterParameters(string rating, string genres, string years, int limit, string additionalParameters)
         {
             var parameters = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
